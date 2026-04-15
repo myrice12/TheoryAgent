@@ -1,14 +1,8 @@
 # 🔬 TheoryAgent
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
-
 **TheoryAgent** 是一款面向科研场景的自动化研究工作流引擎。它将复杂的研究过程解构为 9 个连续、可观测且可恢复的阶段，支持从“研究主题”到“高质量论文草稿”的全流程自动化产出。
 
----
 
-## 🚀 核心价值主张 (Core Value Proposition)
+## 🚀 核心价值主张
 
 不同于单纯的文本生成工具，TheoryAgent 强调**研究过程的完整性**与**结论的可靠性**：
 
@@ -22,18 +16,6 @@
 ## 🛠️ 标准研究工作流 (Workflow)
 
 TheoryAgent 遵循严格的九阶段线性推进逻辑：
-
-```mermaid
-graph LR
-    IDEATION[文献检索] --> PLANNING[实验蓝图]
-    PLANNING --> SETUP[环境准备]
-    SETUP --> CODING[代码生成]
-    CODING --> EXECUTION[实验执行]
-    EXECUTION --> ANALYSIS[证据提取]
-    ANALYSIS --> FIGURE_GEN[图表生成]
-    FIGURE_GEN --> WRITING[论文撰写]
-    WRITING --> REVIEW[自动审阅]
-```
 
 1.  **IDEATION**: 检索前沿文献，识别研究空白，提炼核心假设。
 2.  **PLANNING**: 生成详细的实验方案或综述大纲。
@@ -108,26 +90,3 @@ theoryagent run --topic "survey:standard: Efficient Multimodal Learning"
 *   **导出产物**: `theoryagent export --workspace <session_dir> --output ./my_paper`
 *   **健康检查**: `theoryagent health`
 
----
-
-## 📂 项目结构 (Repository Structure)
-
-```text
-theory-agent/
-├── theoryagent/         # 核心逻辑：Agent 行为、Pipeline 编排、数据 Schema
-├── mcp_server/          # MCP 工具服务：搜索、PDF 解析、图表生成、LaTeX 编译
-├── skills/              # 任务技能定义文档
-├── theoryagent_.../     # 示例输出产物（论文、代码、中间数据）
-└── pyproject.toml       # 项目依赖与入口定义
-```
-
-详细架构说明请参考 [ARCHITECTURE_OVERVIEW.md](ARCHITECTURE_OVERVIEW.md)。
-
----
-
-## 📄 许可证 (License)
-
-本项目基于 [MIT License](LICENSE) 开源。
-
----
-<p align="center">Built with ❤️ for the AI Research Community</p>
