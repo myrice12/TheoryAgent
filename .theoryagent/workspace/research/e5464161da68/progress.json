@@ -1,0 +1,51 @@
+{
+  "events": [
+    {
+      "type": "stage_start",
+      "stage": "WRITING",
+      "progress_pct": 78,
+      "message": "[8/9] Running WRITING...",
+      "stage_index": 7,
+      "total_stages": 9,
+      "timestamp": "2026-04-02T15:12:26.330755+00:00",
+      "elapsed_s": 0.0
+    },
+    {
+      "type": "stage_complete",
+      "stage": "WRITING",
+      "progress_pct": 89,
+      "message": "[8/9] WRITING completed in 156.5s",
+      "stage_elapsed_s": 156.5,
+      "timestamp": "2026-04-02T15:15:02.782415+00:00",
+      "elapsed_s": 156.5
+    },
+    {
+      "type": "stage_start",
+      "stage": "REVIEW",
+      "progress_pct": 89,
+      "message": "[9/9] Running REVIEW...",
+      "stage_index": 8,
+      "total_stages": 9,
+      "timestamp": "2026-04-02T15:15:02.783323+00:00",
+      "elapsed_s": 156.5
+    },
+    {
+      "type": "stage_complete",
+      "stage": "REVIEW",
+      "progress_pct": 100,
+      "message": "[9/9] REVIEW completed in 1826.6s",
+      "stage_elapsed_s": 1826.6,
+      "timestamp": "2026-04-02T15:45:29.440263+00:00",
+      "elapsed_s": 1983.1
+    },
+    {
+      "type": "pipeline_complete",
+      "success": true,
+      "progress_pct": 100,
+      "message": "Deep pipeline completed successfully",
+      "timestamp": "2026-04-02T15:45:29.441624+00:00",
+      "elapsed_s": 1983.1
+    }
+  ],
+  "last_update": "2026-04-02T15:45:29.441631+00:00"
+}

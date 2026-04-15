@@ -1,0 +1,21 @@
+{
+  "stages": {
+    "WRITING": {
+      "total_tokens": 40903,
+      "prompt_tokens": 34399,
+      "completion_tokens": 6504,
+      "num_calls": 7,
+      "total_latency_ms": 148048.4
+    },
+    "REVIEW": {
+      "total_tokens": 358111,
+      "prompt_tokens": 277401,
+      "completion_tokens": 80710,
+      "num_calls": 54,
+      "total_latency_ms": 1810307.4
+    }
+  },
+  "total_tokens": 399014,
+  "total_calls": 61,
+  "total_latency_ms": 1958355.8
+}

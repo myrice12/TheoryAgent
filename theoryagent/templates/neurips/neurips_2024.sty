@@ -1,0 +1,18 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{neurips_2024}[2026/04/02 TheoryAgent compatibility shim]
+
+% This lightweight shim keeps the NeurIPS template entry point intact so local
+% workspace compilation succeeds even when the official style bundle is absent.
+% It is intentionally minimal and favors reliable PDF export over exact venue
+% formatting.
+
+\DeclareOption*{}
+\ProcessOptions\relax
+
+\RequirePackage[margin=1in]{geometry}
+\RequirePackage{fancyhdr}
+
+\setlength{\headheight}{13.6pt}
+\pagestyle{plain}
+
+\endinput

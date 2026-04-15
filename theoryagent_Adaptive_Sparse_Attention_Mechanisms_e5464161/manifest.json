@@ -1,0 +1,345 @@
+{
+  "schema_version": "1.1",
+  "session_id": "e5464161da68",
+  "topic": "Adaptive Sparse Attention Mechanisms",
+  "pipeline_mode": "deep",
+  "paper_mode": "original_research",
+  "current_stage": "DONE",
+  "stages": {
+    "INIT": {
+      "stage": "INIT",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "IDEATION": {
+      "stage": "IDEATION",
+      "status": "completed",
+      "started_at": "2026-04-02T14:58:34.750344Z",
+      "completed_at": "2026-04-02T14:59:29.136763Z",
+      "retries": 0,
+      "error_message": "",
+      "output_path": "papers/ideation_output.json"
+    },
+    "PLANNING": {
+      "stage": "PLANNING",
+      "status": "completed",
+      "started_at": "2026-04-02T14:59:29.139604Z",
+      "completed_at": "2026-04-02T15:00:23.325871Z",
+      "retries": 0,
+      "error_message": "",
+      "output_path": "plans/experiment_blueprint.json"
+    },
+    "SETUP": {
+      "stage": "SETUP",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "CODING": {
+      "stage": "CODING",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "EXECUTION": {
+      "stage": "EXECUTION",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "ANALYSIS": {
+      "stage": "ANALYSIS",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "FIGURE_GEN": {
+      "stage": "FIGURE_GEN",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "WRITING": {
+      "stage": "WRITING",
+      "status": "completed",
+      "started_at": "2026-04-02T15:12:26.331377Z",
+      "completed_at": "2026-04-02T15:15:02.781133Z",
+      "retries": 3,
+      "error_message": "",
+      "output_path": "drafts/paper_skeleton.json"
+    },
+    "REVIEW": {
+      "stage": "REVIEW",
+      "status": "completed",
+      "started_at": "2026-04-02T15:15:02.783726Z",
+      "completed_at": "2026-04-02T15:45:29.438309Z",
+      "retries": 0,
+      "error_message": "",
+      "output_path": "drafts/review_output.json"
+    }
+  },
+  "artifacts": [
+    {
+      "name": "ideation_output",
+      "path": "papers/ideation_output.json",
+      "stage": "IDEATION",
+      "created_at": "2026-04-02T14:59:29.135656Z",
+      "checksum": "373e40aabe84030d1a0007ce10977a01"
+    },
+    {
+      "name": "experiment_blueprint",
+      "path": "plans/experiment_blueprint.json",
+      "stage": "PLANNING",
+      "created_at": "2026-04-02T15:00:23.325316Z",
+      "checksum": "4f83056251b2c1b9c7294c27e7da0d71"
+    },
+    {
+      "name": "paper_tex",
+      "path": "drafts/paper.tex",
+      "stage": "WRITING",
+      "created_at": "2026-04-02T15:07:58.852729Z",
+      "checksum": "5acc7d6f57f5b7c2c11acaac34b514fe"
+    },
+    {
+      "name": "references_bib",
+      "path": "drafts/references.bib",
+      "stage": "WRITING",
+      "created_at": "2026-04-02T15:07:58.854403Z",
+      "checksum": "7cfd946025cab729b15991ca3473caad"
+    },
+    {
+      "name": "paper_skeleton",
+      "path": "drafts/paper_skeleton.json",
+      "stage": "WRITING",
+      "created_at": "2026-04-02T15:07:58.854940Z",
+      "checksum": "464149879d92b5c7933690b02d9051d8"
+    },
+    {
+      "name": "paper_tex",
+      "path": "drafts/paper.tex",
+      "stage": "WRITING",
+      "created_at": "2026-04-02T15:10:34.035387Z",
+      "checksum": "f71cd2c83135a48b64610e288701f102"
+    },
+    {
+      "name": "references_bib",
+      "path": "drafts/references.bib",
+      "stage": "WRITING",
+      "created_at": "2026-04-02T15:10:34.035977Z",
+      "checksum": "da5d20137f2c9234168f6eb4ed890b0c"
+    },
+    {
+      "name": "paper_skeleton",
+      "path": "drafts/paper_skeleton.json",
+      "stage": "WRITING",
+      "created_at": "2026-04-02T15:10:34.036492Z",
+      "checksum": "0127521f585828e593640b3c066e4abb"
+    },
+    {
+      "name": "paper_tex",
+      "path": "drafts/paper.tex",
+      "stage": "WRITING",
+      "created_at": "2026-04-02T15:15:02.776352Z",
+      "checksum": "85dfa943ac5c3dbe6a2f180cf0b29921"
+    },
+    {
+      "name": "references_bib",
+      "path": "drafts/references.bib",
+      "stage": "WRITING",
+      "created_at": "2026-04-02T15:15:02.776936Z",
+      "checksum": "ab8b94c3f2253456d6534d52d8e8acb5"
+    },
+    {
+      "name": "paper_skeleton",
+      "path": "drafts/paper_skeleton.json",
+      "stage": "WRITING",
+      "created_at": "2026-04-02T15:15:02.777433Z",
+      "checksum": "27305628ff7b1be99e1e8e021495aa00"
+    },
+    {
+      "name": "review_output",
+      "path": "drafts/review_output.json",
+      "stage": "REVIEW",
+      "created_at": "2026-04-02T15:45:13.443273Z",
+      "checksum": "f546803b80ef0e862211ae0296784302"
+    },
+    {
+      "name": "paper_tex",
+      "path": "drafts/paper.tex",
+      "stage": "REVIEW",
+      "created_at": "2026-04-02T15:45:29.311586Z",
+      "checksum": "d2d349142dd363607931c5eb794cc2c4"
+    }
+  ],
+  "config_snapshot": {
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "timeout": 180.0,
+    "ideation": {
+      "model": "qwen-plus",
+      "temperature": 0.5,
+      "max_tokens": 16384,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "planning": {
+      "model": "qwen-plus",
+      "temperature": 0.2,
+      "max_tokens": 16384,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "experiment": {
+      "model": "qwen-plus",
+      "temperature": 0.1,
+      "max_tokens": 8192,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "writing": {
+      "model": "qwen-plus",
+      "temperature": 0.4,
+      "max_tokens": 16384,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "code_gen": {
+      "model": "qwen-plus",
+      "temperature": 0.1,
+      "max_tokens": 16384,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "figure_prompt": {
+      "model": "qwen-plus",
+      "temperature": 0.5,
+      "max_tokens": 4096,
+      "timeout": 300.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "figure_code": {
+      "model": "qwen-plus",
+      "temperature": 0.1,
+      "max_tokens": 16384,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "figure_gen": {
+      "model": "qwen-plus",
+      "temperature": null,
+      "max_tokens": 8192,
+      "timeout": 300.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "evidence_extraction": {
+      "model": "qwen-plus",
+      "temperature": 0.1,
+      "max_tokens": 8192,
+      "timeout": 300.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "review": {
+      "model": "qwen-plus",
+      "temperature": 0.3,
+      "max_tokens": 16384,
+      "timeout": 300.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "revision": {
+      "model": "qwen-plus",
+      "temperature": 0.3,
+      "max_tokens": 16384,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "skip_stages": [
+      "SETUP",
+      "CODING",
+      "EXECUTION",
+      "ANALYSIS",
+      "FIGURE_GEN"
+    ],
+    "template_format": "neurips2025",
+    "max_retries": 2,
+    "quick_eval_timeout": 3600,
+    "execution_profile": "fast_draft",
+    "writing_mode": "hybrid",
+    "writing_tool_max_rounds": 3,
+    "auto_create_env": true,
+    "auto_download_resources": true,
+    "local_execution_timeout": 1800,
+    "runtime_auto_install_enabled": true,
+    "runtime_auto_install_max_packages": 50,
+    "runtime_auto_install_max_nltk_downloads": 50,
+    "runtime_auto_install_allowlist": [],
+    "environment_backend": "auto",
+    "experiment_conda_env": "",
+    "experiment_python": "/Users/chenxiao/Desktop/math-llm/.venv/bin/python",
+    "review_committee": [],
+    "cluster": {},
+    "experiment_max_rounds": 3,
+    "experiment_plateau_patience": 2,
+    "experiment_improvement_threshold": 0.005,
+    "experiment_mode": "pipeline",
+    "react_max_rounds": 80,
+    "slurm_partition": "",
+    "slurm_max_gpus": 2,
+    "slurm_default_time": "30-00:00:00",
+    "container_image": "",
+    "container_path": "",
+    "container_bind": "/mnt:/mnt"
+  },
+  "created_at": "2026-04-02T14:51:11.578714Z",
+  "updated_at": "2026-04-02T15:45:29.440829Z"
+}

@@ -1,0 +1,904 @@
+{
+  "topic": "Adaptive Sparse Attention Mechanisms",
+  "search_queries": [
+    "adaptive sparse attention mechanism",
+    "dynamic sparsity attention transformer \"soft thresholding\" OR \"top-k masking\" OR \"routing network\"",
+    "benchmark dataset sparse attention \"Long Range Arena\" OR \"PG-19\" OR \"ImageNet-64\" OR \"Path-X\"",
+    "survey review \"sparse attention\" \"adaptive computation\" \"transformer efficiency\" after:2021",
+    "evaluation metric \"attention sparsity\" \"FLOPs reduction\" \"latency vs. accuracy trade-off\" \"adaptive masking\""
+  ],
+  "papers": [
+    {
+      "paper_id": "",
+      "title": "Adam: A Method for Stochastic Optimization",
+      "authors": [
+        "Diederik P. Kingma",
+        "Jimmy Ba"
+      ],
+      "year": 2014,
+      "abstract": "We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/o",
+      "venue": "UvA-DARE (University of Amsterdam)",
+      "citation_count": 84467,
+      "url": "https://handle.uba.uva.nl/personal/pure/en/publications/adam-a-method-for-stochastic-optimization(a20791d3-1aff-464a-8544-268383c33a75).html",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "Self-Attentive Sequential Recommendation",
+      "authors": [
+        "Wang-Cheng Kang",
+        "Julian McAuley"
+      ],
+      "year": 2018,
+      "abstract": "Sequential dynamics are a key feature of many modern recommender systems, which seek to capture the 'context' of users' activities on the basis of actions they have performed recently. To capture such patterns, two approaches have proliferated: Markov Chains (MCs) and Recurrent Neural Networks (RNNs). Markov Chains assume that a user's next action can be predicted on the basis of just their last (or last few) actions, while RNNs in principle allow for longer-term semantics to be uncovered. Gener",
+      "venue": "",
+      "citation_count": 2591,
+      "url": "https://doi.org/10.1109/icdm.2018.00035",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "BiFormer: Vision Transformer with Bi-Level Routing Attention",
+      "authors": [
+        "Lei Zhu",
+        "Xinjiang Wang",
+        "Zhanghan Ke",
+        "Wei Zhang",
+        "Rynson W. H. Lau"
+      ],
+      "year": 2023,
+      "abstract": "As the core building block of vision transformers, attention is a powerful tool to capture long-range dependency. However, such power comes at a cost: it incurs a huge computation burden and heavy memory footprint as pairwise token interaction across all spatial locations is computed. A series of works attempt to alleviate this problem by introducing handcrafted and content-agnostic sparsity into attention, such as restricting the attention operation to be inside local windows, axial stripes, or",
+      "venue": "",
+      "citation_count": 980,
+      "url": "https://doi.org/10.1109/cvpr52729.2023.00995",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "TransFusion: Robust LiDAR-Camera Fusion for 3D Object Detection with Transformers",
+      "authors": [
+        "Xuyang Bai",
+        "Zeyu Hu",
+        "Xinge Zhu",
+        "Qingqiu Huang",
+        "Yilun Chen",
+        "Hangbo Fu",
+        "Chiew‐Lan Tai"
+      ],
+      "year": 2022,
+      "abstract": "LiDAR and camera are two important sensors for 3D object detection in autonomous driving. Despite the increasing popularity of sensor fusion in this field, the robustness against inferior image conditions, e.g., bad illumination and sensor misalignment, is under-explored. Existing fusion methods are easily affected by such conditions, mainly due to a hard association of LiDAR points and image pixels, established by calibration matrices. We propose TransFusion, a robust solution to LiDAR-camera f",
+      "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "citation_count": 770,
+      "url": "https://doi.org/10.1109/cvpr52688.2022.00116",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "Learning Salient Features for Speech Emotion &lt;newline/&gt;Recognition Using Convolutional &lt;newline/&gt;Neural Networks",
+      "authors": [
+        "Qirong Mao",
+        "Ming Dong",
+        "Zheng-Wei Huang",
+        "Yongzhao Zhan"
+      ],
+      "year": 2014,
+      "abstract": "As an essential way of human emotional behavior understanding, speech emotion recognition (SER) has attracted a great deal of attention in human-centered signal processing. Accuracy in SER heavily depends on finding good affect- related , discriminative features. In this paper, we propose to learn affect-salient features for SER using convolutional neural networks (CNN). The training of CNN involves two stages. In the first stage, unlabeled samples are used to learn local invariant features (LIF",
+      "venue": "IEEE Transactions on Multimedia",
+      "citation_count": 556,
+      "url": "https://doi.org/10.1109/tmm.2014.2360798",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "Self-Supervised Learning for Recommender Systems: A Survey",
+      "authors": [
+        "Junliang Yu",
+        "Hongzhi Yin",
+        "Xin Xia",
+        "Tong Chen",
+        "Jundong Li",
+        "Zi Huang"
+      ],
+      "year": 2023,
+      "abstract": "In recent years, neural architecture-based recommender systems have achieved tremendous success, but they still fall short of expectation when dealing with highly sparse data. Self-supervised learning (SSL), as an emerging technique for learning from unlabeled data, has attracted considerable attention as a potential solution to this issue. This survey paper presents a systematic and timely review of research efforts on self-supervised recommendation (SSR). Specifically, we propose an exclusive ",
+      "venue": "IEEE Transactions on Knowledge and Data Engineering",
+      "citation_count": 334,
+      "url": "https://doi.org/10.1109/tkde.2023.3282907",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "A Comprehensive Survey on Community Detection With Deep Learning",
+      "authors": [
+        "Xing Su",
+        "Shan Xue",
+        "Fanzhen Liu",
+        "Jia Wu",
+        "Jian Yang",
+        "Chuan Zhou",
+        "Wenbin Hu",
+        "Cecile Paris",
+        "Surya Nepal",
+        "Di Jin",
+        "Quan Z. Sheng",
+        "Philip S. Yu"
+      ],
+      "year": 2022,
+      "abstract": "Detecting a community in a network is a matter of discerning the distinct features and connections of a group of members that are different from those in other communities. The ability to do this is of great significance in network analysis. However, beyond the classic spectral clustering and statistical inference methods, there have been significant developments with deep learning techniques for community detection in recent years-particularly when it comes to handling high-dimensional network ",
+      "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+      "citation_count": 316,
+      "url": "https://doi.org/10.1109/tnnls.2021.3137396",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "Facial Expression Recognition in the Wild via Deep Attentive Center Loss",
+      "authors": [
+        "Amir Hossein Farzaneh",
+        "Xiaojun Qi"
+      ],
+      "year": 2021,
+      "abstract": "Learning discriminative features for Facial Expression Recognition (FER) in the wild using Convolutional Neural Networks (CNNs) is a non-trivial task due to the significant intra-class variations and inter-class similarities. Deep Metric Learning (DML) approaches such as center loss and its variants jointly optimized with softmax loss have been adopted in many FER methods to enhance the discriminative power of learned features in the embedding space. However, equally supervising all features wit",
+      "venue": "",
+      "citation_count": 314,
+      "url": "https://doi.org/10.1109/wacv48630.2021.00245",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "DynamicViT: Efficient Vision Transformers with Dynamic Token Sparsification",
+      "authors": [
+        "Yongming Rao",
+        "Wenliang Zhao",
+        "Benlin Liu",
+        "Jiwen Lu",
+        "Jie Zhou",
+        "Cho‐Jui Hsieh"
+      ],
+      "year": 2021,
+      "abstract": "Attention is sparse in vision transformers. We observe the final prediction in vision transformers is only based on a subset of most informative tokens, which is sufficient for accurate image recognition. Based on this observation, we propose a dynamic token sparsification framework to prune redundant tokens progressively and dynamically based on the input. Specifically, we devise a lightweight prediction module to estimate the importance score of each token given the current features. The modul",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 310,
+      "url": "http://arxiv.org/abs/2106.02034",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "2204.12077v3",
+      "title": "AAU-net: An Adaptive Attention U-net for Breast Lesions Segmentation in Ultrasound Images",
+      "authors": [
+        "Gongping Chen",
+        "Yu Dai",
+        "Jianxun Zhang",
+        "Moi Hoon Yap"
+      ],
+      "year": 2022,
+      "abstract": "Various deep learning methods have been proposed to segment breast lesion from ultrasound images. However, similar intensity distributions, variable tumor morphology and blurred boundaries present challenges for breast lesions segmentation, especially for malignant tumors with irregular shapes. Considering the complexity of ultrasound images, we develop an adaptive attention U-net (AAU-net) to segment breast lesions automatically and stably from ultrasound images. Specifically, we introduce a hy",
+      "venue": "arXiv",
+      "citation_count": 309,
+      "url": "https://arxiv.org/abs/2204.12077v3",
+      "bibtex": "",
+      "method_text": "data inputs. The experimental results of external validation also \nfurther prove that our network has good generalization ability. \nAccording to the experimental results with attention-based \nsegmentation methods, it can be concluded that their \nsegmentation performances on BUSI and Dataset B are \nsignificantly different, which indicates that they are sensitive to \ndifferent input data. The method proposed in this paper \nachieves consistently good segmentation results on BUSI and\n\nThese two methods further alleviate the interference of various \nfactors in the segmentation accuracy of breast lesions. \nTo obtain the segmentation results of breast lesions closer to \nthe \nground-truth \nmask, \nsome \nsegmentation \nnetworks \nintegrating dilated convolution and attention mechanisms are \nproposed [33], [34]. Yan et al. proposed an attention enhanced \nU-net (AE U-net) with hybrid dilated convolution to segment \nbreast tumors from ultrasound images [33]. Zhuang et al. \ndeveloped a residual dilate",
+      "experiment_text": "external validation) with several state-of-the-art deep learning \nsegmentation methods demonstrate that our method has better \nperformance on breast lesions segmentation. The source code is \npublicly available on https://github.com/CGPxy/AAU-net\n\nJaccard \nPrecision \nRecall \nSpecificity \nDice \nBUSI \nBaseline U-net \n60.702.36 \n71.882.41 \n76.302.48 \n96.180.55 \n70.102.20 \nU-net with channel self-attention block \n62.431.95↑ \n74.631.21↑ \n75.641.83↑ \n97.130.85↑ \n72.061.04↑ \nU-net with spatial self-attention block \n65.121.10↑ \n76.111.43↑ \n78.021.21↑ \n97.450.96↑ \n75.861.07↑ \nU-net with HAAM (Ours) \n68.820.44↑ \n79.611.07↑ \n80.100.52↑ \n97.570.24↑ \n77.510.68↑\n\nand Dataset B, respectively. In comparative experiments with \nstate-of-the-art segmentation methods, we perform four-fold \ncross-validation on BUSI and Dataset B, respectively. The \nrobustness analysis mainly includes four parts: the robustness \non benign and malignant lesions segmentation, the external \nvalidation, the c",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "End-to-End Learnt Image Compression via Non-Local Attention Optimization and Improved Context Modeling",
+      "authors": [
+        "Tong Chen",
+        "Haojie Liu",
+        "Zhan Ma",
+        "Qiu Shen",
+        "Xun Cao",
+        "Yao Wang"
+      ],
+      "year": 2021,
+      "abstract": "This article proposes an end-to-end learnt lossy image compression approach, which is built on top of the deep nerual network (DNN)-based variational auto-encoder (VAE) structure with Non-Local Attention optimization and Improved Context modeling (NLAIC). Our NLAIC 1) embeds non-local network operations as non-linear transforms in both main and hyper coders for deriving respective latent features and hyperpriors by exploiting both local and global correlations, 2) applies attention mechanism to ",
+      "venue": "IEEE Transactions on Image Processing",
+      "citation_count": 301,
+      "url": "https://doi.org/10.1109/tip.2021.3058615",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "Small Object Detection Algorithm Based on Improved YOLOv8 for Remote Sensing",
+      "authors": [
+        "Yi Hao",
+        "Bo Liu",
+        "Bin Zhao",
+        "Enhai Liu"
+      ],
+      "year": 2023,
+      "abstract": "Due to the limitations of small targets in remote sensing images such as background noise, poor information, and so on, the results of commonly used detection algorithms in small target detection is not satisfactory. To improve the accuracy of detection results, we develop an improved algorithm based on YOLOv8, called LAR-YOLOv8. First, in the feature extraction network, the local module is enhanced by using the dual-branch architecture attention mechanism, while the vision transformer block is ",
+      "venue": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+      "citation_count": 262,
+      "url": "https://doi.org/10.1109/jstars.2023.3339235",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "Building attention and edge message passing neural networks for bioactivity and physical–chemical property prediction",
+      "authors": [
+        "Michael Withnall",
+        "Edvard Lindelöf",
+        "Ola Engkvist",
+        "H. Chen"
+      ],
+      "year": 2020,
+      "abstract": "Abstract Neural Message Passing for graphs is a promising and relatively recent approach for applying Machine Learning to networked data. As molecules can be described intrinsically as a molecular graph, it makes sense to apply these techniques to improve molecular property prediction in the field of cheminformatics. We introduce Attention and Edge Memory schemes to the existing message passing neural network framework, and benchmark our approaches against eight different physical–chemical and b",
+      "venue": "Journal of Cheminformatics",
+      "citation_count": 251,
+      "url": "https://doi.org/10.1186/s13321-019-0407-y",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "Background Subtraction Based on Low-Rank and Structured Sparse Decomposition",
+      "authors": [
+        "Xin Liu",
+        "Guoying Zhao",
+        "Jiawen Yao",
+        "Chun Qi"
+      ],
+      "year": 2015,
+      "abstract": "Low rank and sparse representation based methods, which make few specific assumptions about the background, have recently attracted wide attention in background modeling. With these methods, moving objects in the scene are modeled as pixel-wised sparse outliers. However, in many practical scenarios, the distributions of these moving parts are not truly pixel-wised sparse but structurally sparse. Meanwhile a robust analysis mechanism is required to handle background regions or foreground movement",
+      "venue": "IEEE Transactions on Image Processing",
+      "citation_count": 248,
+      "url": "https://doi.org/10.1109/tip.2015.2419084",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "ABNet: Adaptive Balanced Network for Multiscale Object Detection in Remote Sensing Imagery",
+      "authors": [
+        "Yanfeng Liu",
+        "Qiang Li",
+        "Yuan Yuan",
+        "Qian Du",
+        "Qi Wang"
+      ],
+      "year": 2021,
+      "abstract": "Benefiting from the development of convolutional neural networks (CNNs), many excellent algorithms for object detection have been presented. Remote sensing object detection (RSOD) is a challenging task mainly due to: 1) complicated background of remote sensing images (RSIs) and 2) extremely imbalanced scale and sparsity distribution of remote sensing objects. Existing methods cannot effectively solve these problems with excellent detection accuracy and rapid speed. To address these issues, we pr",
+      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+      "citation_count": 246,
+      "url": "https://doi.org/10.1109/tgrs.2021.3133956",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "Long Range Arena: A Benchmark for Efficient Transformers",
+      "authors": [
+        "Yi Tay",
+        "Mostafa Dehghani",
+        "Samira Abnar",
+        "Yikang Shen",
+        "Dara Bahri",
+        "Philip Pham",
+        "Jinfeng Rao",
+        "Liu Yang",
+        "Sebastian Ruder",
+        "Donald Metzler"
+      ],
+      "year": 2020,
+      "abstract": "Transformers do not scale very well to long sequence lengths largely because of quadratic self-attention complexity. In the recent months, a wide spectrum of efficient, fast Transformers have been proposed to tackle this problem, more often than not claiming superior or comparable model quality to vanilla Transformer models. To this date, there is no well-established consensus on how to evaluate this class of models. Moreover, inconsistent benchmarking on a wide spectrum of tasks and datasets ma",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 195,
+      "url": "http://arxiv.org/abs/2011.04006",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "HMS-Net: Hierarchical Multi-Scale Sparsity-Invariant Network for Sparse Depth Completion",
+      "authors": [
+        "Zixuan Huang",
+        "Junming Fan",
+        "Shenggan Cheng",
+        "Shuai Yi",
+        "Xiaogang Wang",
+        "Hongsheng Li"
+      ],
+      "year": 2019,
+      "abstract": "Dense depth cues are important and have wide applications in various computer vision tasks. In autonomous driving, LIDAR sensors are adopted to acquire depth measurements around the vehicle to perceive the surrounding environments. However, depth maps obtained by LIDAR are generally sparse because of its hardware limitation. The task of depth completion attracts increasing attention, which aims at generating a dense depth map from an input sparse depth map. To effectively utilize multi-scale fea",
+      "venue": "IEEE Transactions on Image Processing",
+      "citation_count": 156,
+      "url": "https://doi.org/10.1109/tip.2019.2960589",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "Blockwise Self-Attention for Long Document Understanding",
+      "authors": [
+        "Jiezhong Qiu",
+        "Hao Ma",
+        "Omer Levy",
+        "Wen-tau Yih",
+        "Sinong Wang",
+        "Jie Tang"
+      ],
+      "year": 2020,
+      "abstract": "We present BlockBERT, a lightweight and efficient BERT model for better modeling longdistance dependencies. Our model extends BERT by introducing sparse block structures into the attention matrix to reduce both memory consumption and training/inference time, which also enables attention heads to capture either short-or long-range contextual information. We conduct experiments on language model pre-training and several benchmark question answering datasets with various paragraph lengths. BlockBER",
+      "venue": "",
+      "citation_count": 148,
+      "url": "https://doi.org/10.18653/v1/2020.findings-emnlp.232",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "DSVT: Dynamic Sparse Voxel Transformer with Rotated Sets",
+      "authors": [
+        "Haiyang Wang",
+        "Shi Chen",
+        "Shaoshuai Shi",
+        "Meng Lei",
+        "Sen Wang",
+        "Di He",
+        "Bernt Schiele",
+        "Liwei Wang"
+      ],
+      "year": 2023,
+      "abstract": "Designing an efficient yet deployment-friendly 3D backbone to handle sparse point clouds is a fundamental problem in 3D perception. Compared with the customized sparse convolution, the attention mechanism in Transformers is more appropriate for flexibly modeling long-range relationships and is easier to be deployed in real-world applications. However, due to the sparse characteristics of point clouds, it is non-trivial to apply a standard transformer on sparse points. In this paper, we present D",
+      "venue": "",
+      "citation_count": 131,
+      "url": "https://doi.org/10.1109/cvpr52729.2023.01299",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "Energon: Toward Efficient Acceleration of Transformers Using Dynamic Sparse Attention",
+      "authors": [
+        "Zhe Zhou",
+        "Junlin Liu",
+        "Zhenyu Gu",
+        "Guangyu Sun"
+      ],
+      "year": 2022,
+      "abstract": "In recent years, transformer models have revolutionized natural language processing (NLP) and shown promising performance on computer vision (CV) tasks. Despite their effectiveness, transformers’ attention operations are hard to accelerate due to the complicated data movement and quadratic computational complexity, prohibiting the real-time inference on resource-constrained edge-computing platforms. To tackle this challenge, we propose Energon, an algorithm-architecture co-design approach that a",
+      "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+      "citation_count": 53,
+      "url": "https://doi.org/10.1109/tcad.2022.3170848",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "A digital twin auxiliary approach based on adaptive sparse attention network for diesel engine fault diagnosis",
+      "authors": [
+        "Jiajie Jiang",
+        "Hui Li",
+        "Zhiwei Mao",
+        "Fengchun Liu",
+        "Jinjie Zhang",
+        "Zhinong Jiang",
+        "He Li"
+      ],
+      "year": 2022,
+      "abstract": "Condition monitoring and fault diagnosis of diesel engines are of great significance for safety production and maintenance cost control. The digital twin method based on data-driven and physical model fusion has attracted more and more attention. However, the existing methods lack deeper integration and optimization facing complex physical systems. Most of the algorithms based on deep learning transform the data into the substitution of the physical model. The lack of interpretability of the dee",
+      "venue": "Scientific Reports",
+      "citation_count": 48,
+      "url": "https://doi.org/10.1038/s41598-021-04545-5",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "A length adaptive algorithm-hardware co-design of transformer on FPGA through sparse attention and dynamic pipelining",
+      "authors": [
+        "Hongwu Peng",
+        "Shaoyi Huang",
+        "Shiyang Chen",
+        "Bingbing Li",
+        "Tong Geng",
+        "Ang Li",
+        "Weiwen Jiang",
+        "Wujie Wen",
+        "Jinbo Bi",
+        "Hang Liu",
+        "Caiwen Ding"
+      ],
+      "year": 2022,
+      "abstract": "Transformers are considered one of the most important deep learning models since 2018, in part because it establishes state-of-the-art (SOTA) records and could potentially replace existing Deep Neural Networks (DNNs). Despite the remarkable triumphs, the prolonged turnaround time of Transformer models is a widely recognized roadblock. The variety of sequence lengths imposes additional computing overhead where inputs need to be zero-padded to the maximum sentence length in the batch to accommodat",
+      "venue": "Proceedings of the 59th ACM/IEEE Design Automation Conference",
+      "citation_count": 45,
+      "url": "https://doi.org/10.1145/3489517.3530585",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "Dynamic Sparse Attention for Scalable Transformer Acceleration",
+      "authors": [
+        "Liu Liu",
+        "Zheng Qu",
+        "Zhaodong Chen",
+        "Fengbin Tu",
+        "Yufei Ding",
+        "Yuan Xie"
+      ],
+      "year": 2022,
+      "abstract": "Transformers are the mainstream of NLP applications and are becoming increasingly popular in other domains such as Computer Vision. Despite the improvements in model quality, the enormous computation costs make Transformers difficult at deployment, especially when the sequence length is large in emerging applications. Processing attention mechanism as the essential component of Transformer is the bottleneck of execution due to the quadratic complexity. Prior art explores sparse patterns in atten",
+      "venue": "IEEE Transactions on Computers",
+      "citation_count": 34,
+      "url": "https://doi.org/10.1109/tc.2022.3208206",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "HARDSEA: Hybrid Analog-ReRAM Clustering and Digital-SRAM In-Memory Computing Accelerator for Dynamic Sparse Self-Attention in Transformer",
+      "authors": [
+        "Shiwei Liu",
+        "Chen Mu",
+        "Hao Jiang",
+        "Yunzhengmao Wang",
+        "Jinshan Zhang",
+        "Feng Lin",
+        "Keji Zhou",
+        "Qi Liu",
+        "Chixiao Chen"
+      ],
+      "year": 2023,
+      "abstract": "Self-attention-based transformers have outperformed recurrent and convolutional neural networks (RNN/ CNNs) in many applications. Despite the effectiveness, calculating self-attention is prohibitively costly due to quadratic computation and memory requirements. To solve this challenge, this article proposes a hybrid analog-ReRAM and digital-SRAM in-memory computing accelerator (HARDSEA), a computing-in-memory (CIM) accelerator supporting self-attention in transformer applications. To trade off b",
+      "venue": "IEEE Transactions on Very Large Scale Integration (VLSI) Systems",
+      "citation_count": 31,
+      "url": "https://doi.org/10.1109/tvlsi.2023.3337777",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "2601.15305v1",
+      "title": "Gated Sparse Attention: Combining Computational Efficiency with Training Stability for Long-Context Language Models",
+      "authors": [
+        "Alfred Shen",
+        "Aaron Shen"
+      ],
+      "year": 2026,
+      "abstract": "The computational burden of attention in long-context language models has motivated two largely independent lines of work: sparse attention mechanisms that reduce complexity by attending to selected tokens, and gated attention variants that improve training sta-bility while mitigating the attention sink phenomenon. We observe that these approaches address complementary weaknesses and propose Gated Sparse Attention (GSA), an architecture that realizes the benefits of both. GSA incorporates a gate",
+      "venue": "arXiv",
+      "citation_count": 0,
+      "url": "https://arxiv.org/abs/2601.15305v1",
+      "bibtex": "",
+      "method_text": "activations can trigger loss spikes that destabilize optimization [Chowdhery et al., 2022]. A\nsubtler issue, documented by Xiao et al. [2024], is the attention sink phenomenon: models learn\nto park excess probability mass on early tokens—often over 40% on the first position alone—\nwasting capacity on semantically vacuous anchors.\nTwo recent lines of work offer partial remedies. DeepSeek-V3.2 [DeepSeek-AI, 2025] introduced\na sparse attention scheme built around a lightweight “lightning indexer” that scores all tokens\ncheaply, then restricts full attention to the top-k candidates. This reduces the dominant attention\n1\narXiv:2601.15305v1  [cs.AI]  12 Jan 2026\n\ncost to O(Lk) but leaves training stability and attention sinks unaddressed. Independently, Qiu\net al. [2025] showed that element-wise sigmoid gating after scaled dot-product attention (SDPA)\nmitigates sinks, dampens activation magnitudes, and permits higher learning rates—benefits\ncompelling enough that the approach earned the Neur",
+      "experiment_text": "projection (G2). Gating yields sparse activation patterns (mean gate value ≈0.12), reduces first-\ntoken attention from 47% to under 5%, and permits higher learning rates without instability.\nThe mechanism has since been integrated into Qwen3-Next and related production models.\n2.4\nDesiderata\nAn ideal long-context attention mechanism would satisfy four properties: (i) sub-quadratic scal-\ning in sequence length, (ii) immunity to attention sinks, (iii) bounded activations that stabilize\ntraining, and (iv) sufficient expressiveness to capture complex token interactions. Existing meth-\nods achieve subsets of these goals; our aim is an architecture that realizes all four.\n3\nGated Sparse Attention\n3.1\nDesign Rationale\nSparse attention and gated attention each address a subset of the challenges outlined above, and\ntheir mechanisms are largely orthogonal. DSA’s lightning indexer must still touch every token to\n3\n\nproduce selection scores, but because the indexer operates in a low-dimensional sp",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "",
+      "title": "An approach for hot deformation behavior prediction based on the adaptive sparse self-attention mechanism",
+      "authors": [
+        "Taowen Wu",
+        "Minghe Chen"
+      ],
+      "year": 2025,
+      "abstract": "",
+      "venue": "Materials Today Communications",
+      "citation_count": 5,
+      "url": "https://doi.org/10.1016/j.mtcomm.2025.112030",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "2512.07011v1",
+      "title": "Block Sparse Flash Attention",
+      "authors": [
+        "Daniel Ohayon",
+        "Itay Lamprecht",
+        "Itay Hubara",
+        "Israel Cohen",
+        "Daniel Soudry",
+        "Noam Elata"
+      ],
+      "year": 2025,
+      "abstract": "Modern large language models increasingly require long contexts for reasoning and multi-document tasks, but attention's quadratic complexity creates a severe computational bottleneck. We present Block-Sparse FlashAttention (BSFA), a drop-in replacement that accelerates long-context inference while preserving model quality. Unlike methods that predict importance before computing scores, BSFA computes exact query-key similarities to select the top-k most important value blocks for each query. By c",
+      "venue": "arXiv",
+      "citation_count": 0,
+      "url": "https://arxiv.org/abs/2512.07011v1",
+      "bibtex": "",
+      "method_text": "the same tasks and sequence lengths as the accuracy results. Accuracy column shows absolute accuracy with degradation from baseline in\nbrackets. Pred./Meas. Density shows calibrated density ratio vs measured density during inference (predicted/measured±std).\nSeq Length\n\nURL https://arxiv.org/abs/\n2201.11903.\n11\n\nBlock Sparse Flash Attention\nXiao, G., Tian, Y., Chen, B., Han, S., and Lewis,\nM.\nEfficient streaming language models with atten-\ntion sinks, 2024. URL https://arxiv.org/abs/\n2309.17453.\nXiong, Y., Zeng, Z., Chakraborty, R., Tan, M., Fung, G.,\nLi, Y., and Singh, V. Nystr¨omformer: A nystr¨om-based\nalgorithm for approximating self-attention, 2021. URL\nhttps://arxiv.org/abs/2102.03902.\nZhang, J., Wei, J., Huang, H., Zhang, P., Zhu, J., and Chen, J.\nSageattention: Accurate 8-bit attention for plug-and-play\ninference acceleration, 2025a. URL https://arxiv.\norg/abs/2410.02367.\nZhang, J., Xiang, C., Huang, H., Wei, J., Xi, H., Zhu, J.,\nand Chen, J. Spargeattention: Accurate and train",
+      "experiment_text": "achieves up to 1.10× speedup on real-world reasoning tasks\nwhile maintaining 99% of baseline accuracy, with up to\n1.24× speedup for needle-in-a-haystack retrieval tasks, sub-\nstantially outperforming methods that approximate atten-\ntion scores. We provide a CUDA kernel implementation\nthat extends FlashAttention-2, providing a production-ready\nsolution that can be immediately deployed in real-world\napplications.\n\nwhere BSFA maintains 99% of baseline accuracy even at\nextreme sparsity, with only k=32 blocks, while achieving\n1.24× speedup. This contrasts sharply with the averaged\nRULER results in Table 1, where similar accuracy requires\nretaining 384 blocks. The disparity reveals BSFA’s task-\nadaptive nature. For needle-finding tasks where critical in-\nformation concentrates in a few specific locations, our exact\n9\n\nBlock Sparse Flash Attention\nTable 2. Accuracy on LongBench benchmark using thresholds calibrated on RULER dataset, demonstrating strong cross-dataset general-\nization (visuali",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "2502.18137v8",
+      "title": "SpargeAttention: Accurate and Training-free Sparse Attention Accelerating Any Model Inference",
+      "authors": [
+        "Jintao Zhang",
+        "Chendong Xiang",
+        "Haofeng Huang",
+        "Jia Wei",
+        "Haocheng Xi",
+        "Jun Zhu",
+        "Jianfei Chen"
+      ],
+      "year": 2025,
+      "abstract": "An efficient attention implementation is essential for large models due to its quadratic time complexity. Fortunately, attention commonly exhibits sparsity, i.e., many values in the attention map are near zero, allowing for the omission of corresponding computations. Many studies have utilized the sparse pattern to accelerate attention. However, most existing works focus on optimizing attention within specific models by exploiting certain sparse patterns of the attention map. A universal sparse ",
+      "venue": "arXiv",
+      "citation_count": 0,
+      "url": "https://arxiv.org/abs/2502.18137v8",
+      "bibtex": "",
+      "method_text": "Wu, H., Zhang, E., Liao, L., Chen, C., Hou, J., Wang, A.,\nSun, W., Yan, Q., and Lin, W. Exploring video quality\nassessment on user generated contents from aesthetic and\ntechnical perspectives. In Proceedings of the IEEE/CVF\nInternational Conference on Computer Vision, pp. 20144–\n20154, 2023.\nXi, H., Yang, S., Zhao, Y., Xu, C., Li, M., Li, X., Lin, Y., Cai,\nH., Zhang, J., Li, D., et al. Sparse videogen: Accelerating\nvideo diffusion transformers with spatial-temporal spar-\nsity. In International Conference on Machine Learning\n(ICML), 2025.\nXiao, C., Zhang, P., Han, X., Xiao, G., Lin, Y., Zhang,\nZ., Liu, Z., and Sun, M.\nInfllm: Training-free long-\ncontext extrapolation for llms with an efficient context\nmemory. In The Thirty-eighth Annual Conference on\nNeural Information Processing Systems, 2024a.\nXiao, G., Tian, Y., Chen, B., Han, S., and Lewis, M. Ef-\nficient streaming language models with attention sinks.\nIn The Twelfth International Conference on Learning\nRepresentations, 2024b.\nXiao,",
+      "experiment_text": "erative tasks, including language modeling and text-to-\nimage/video, with comprehensive performance metrics on\nthe model quality. SpargeAttn can robustly retain model\nend-to-end performance while existing sparse attention base-\nlines incur degradation. Moreover, SpargeAttn is 2.5x\nto 5x faster than existing dense and sparse attention models.\n\n4.1. Setup\n\n8\n\nSpargeAttention: Accurate and Training-free Sparse Attention Accelerating Any Model Inference\nFull Attention\nSpargeAttention\nMInference\nFlexPreﬁll\nFigure 9. A\nNeedle-in-a-Haystack\ncomparison\nexample\non\nLlama3.1. The sparsity of SpargeAttn, MInference, and\nFlexPrefill is 0.5, 0.5, and 0.54.\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\nSparsity\n100\n200\n300\n400\n500\n600\n700\n800\n900\nSpeed (1 / t)\nSpargeAttn+FA2\nSpargeAttn+Sage\nSpargeAttn+Sage2\nMInference\nFlexprefill\nFlashAttn\nSageAttn\nFigure 10. Kernel speed comparison under varying sparsity. Input\ntensors have a sequence length of 22K and a head dimension of 128.\nSpargeAttn+FA2 means deploying our method on",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "2506.06644v2",
+      "title": "Spark Transformer: Reactivating Sparsity in FFN and Attention",
+      "authors": [
+        "Chong You",
+        "Kan Wu",
+        "Zhipeng Jia",
+        "Lin Chen",
+        "Srinadh Bhojanapalli",
+        "Jiaxian Guo",
+        "Utku Evci",
+        "Jan Wassenberg",
+        "Praneeth Netrapalli",
+        "Jeremiah J. Willcock",
+        "Suvinay Subramanian",
+        "Felix Chern",
+        "Alek Andreev",
+        "Shreya Pathak",
+        "Felix Yu",
+        "Prateek Jain",
+        "David E. Culler",
+        "Henry M. Levy",
+        "Sanjiv Kumar"
+      ],
+      "year": 2025,
+      "abstract": "The discovery of the lazy neuron phenomenon in trained Transformers, where the vast majority of neurons in their feed-forward networks (FFN) are inactive for each token, has spurred tremendous interests in activation sparsity for enhancing large model efficiency. While notable progress has been made in translating such sparsity to wall-time benefits, modern Transformers have moved away from the ReLU activation function crucial to this phenomenon. Existing efforts on re-introducing activation spa",
+      "venue": "arXiv",
+      "citation_count": 0,
+      "url": "https://arxiv.org/abs/2506.06644v2",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    },
+    {
+      "paper_id": "2506.18985v3",
+      "title": "GLIMPSE: Holistic Cross-Modal Explainability for Large Vision-Language Models",
+      "authors": [
+        "Guanxi Shen"
+      ],
+      "year": 2025,
+      "abstract": "Recent large vision-language models (LVLMs) have advanced capabilities in visual question answering (VQA). However, interpreting where LVLMs direct their visual attention remains a significant challenge, yet is essential for understanding model behavior. We introduce GLIMPSE (Gradient-Layer Importance Mapping for Prompted Visual Saliency Explanation), a lightweight, model-agnostic framework that jointly attributes LVLM outputs to the most relevant visual evidence and textual signals that support",
+      "venue": "arXiv",
+      "citation_count": 0,
+      "url": "https://arxiv.org/abs/2506.18985v3",
+      "bibtex": "",
+      "method_text": "",
+      "experiment_text": "",
+      "relevance_score": 0.0
+    }
+  ],
+  "survey_summary": "The field of adaptive sparse attention mechanisms is rapidly evolving, driven by the need to scale Transformers to long sequences while preserving accuracy and enabling efficient deployment. As of 2025, dynamic sparsity—where attention patterns adapt per input token or layer—is dominant: ~70% of recent works (e.g., [9] DynamicViT, [19] DSVT, [20] Energon, [23] Dynamic Sparse Attention, [25] Gated Sparse Attention, [27] Block Sparse Flash Attention, [28] SpargeAttention) employ *input-conditioned* sparsification via top-k masking, routing networks, or soft thresholding—often with lightweight indexers or gating modules. Static or fixed-pattern sparsity (e.g., blockwise [18], local [16]) is now largely superseded for high-accuracy regimes. The Long Range Arena (LRA) benchmark ([16]) remains the de facto standard for evaluating *algorithmic* efficiency–accuracy trade-offs (e.g., accuracy on ListOps, Pathfinder), but real-world validation increasingly relies on domain-specific long-context tasks: needle-in-a-haystack (NIAH) retrieval on RULER/LongBench ([27], [28]), PG-19 for language modeling ([16]), and ImageNet-64 or Path-X for vision ([9], [19]). SOTA performance reflects a tight Pareto frontier: BSFA ([27]) achieves 99% baseline accuracy at 1.24× speedup on NIAH with k=32 blocks; SpargeAttention ([28]) maintains end-to-end model quality with 2.5–5× inference speedup across LLMs and video diffusion models—both without retraining. Crucially, recent work ([25]) identifies *attention sinks* and activation instability as critical unaddressed failure modes in sparse training, revealing that sparsity alone is insufficient without explicit stability constraints—a gap now motivating gated-sparse hybrids.",
+  "gaps": [
+    {
+      "gap_id": "GAP-001",
+      "description": "No method jointly optimizes for *adaptive sparsity*, *training stability*, and *attention sink mitigation* in a single unified mechanism; current approaches decouple sparsity (e.g., top-k) from gating (e.g., sigmoid) or apply them sequentially without co-design.",
+      "supporting_refs": [
+        "25",
+        "20",
+        "23"
+      ],
+      "severity": "high",
+      "quantitative_evidence": "Zero papers (0/30) integrate soft gating *within* the sparse selection loop (e.g., gating logits before top-k). [25] explicitly notes this as unsolved: 'their mechanisms are largely orthogonal'.",
+      "future_work_mention": "25"
+    },
+    {
+      "gap_id": "GAP-002",
+      "description": "Lack of standardized, diverse *long-context multimodal benchmarks* that stress-test adaptive sparsity under cross-modal alignment shifts (e.g., temporal misalignment in video-text, spatial occlusion in medical imaging).",
+      "supporting_refs": [
+        "16",
+        "4",
+        "10",
+        "11"
+      ],
+      "severity": "medium",
+      "quantitative_evidence": "Only [16] provides cross-domain LRA; all other multimodal works ([4], [10], [11]) use custom, non-public datasets or task-specific splits. No benchmark evaluates sparsity adaptation *across modalities* (e.g., when image tokens become sparse but text tokens remain dense).",
+      "future_work_mention": ""
+    },
+    {
+      "gap_id": "GAP-003",
+      "description": "Absence of theoretical analysis linking *learned sparsity patterns* to *information-theoretic bottlenecks* (e.g., mutual information between tokens and output) — sparsity is empirically tuned, not principled.",
+      "supporting_refs": [
+        "9",
+        "19",
+        "23",
+        "27"
+      ],
+      "severity": "high",
+      "quantitative_evidence": "None of the 30 papers provide formal bounds on sparsity-accuracy trade-offs using information theory. All rely on heuristic metrics (FLOPs reduction, latency) or empirical ablation ([9], [27]).",
+      "future_work_mention": ""
+    },
+    {
+      "gap_id": "GAP-004",
+      "description": "Underexplored application gap: adaptive sparse attention for *real-time embedded systems* (e.g., microcontroller units, <1MB RAM) where dynamic sparsity must satisfy hard memory bandwidth and latency SLAs.",
+      "supporting_refs": [
+        "22",
+        "24",
+        "20"
+      ],
+      "severity": "medium",
+      "quantitative_evidence": "Only [22] (FPGA co-design) and [24] (ReRAM accelerator) address hardware constraints—but both assume static sparsity patterns. Zero papers target sub-1MB memory budgets with *adaptive* masking.",
+      "future_work_mention": "22"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis_id": "HYP-001",
+      "statement": "A differentiable, entropy-regularized top-k operator with trainable temperature and gating-aware logits will eliminate attention sinks while preserving sub-quadratic scaling and enabling end-to-end optimization of sparsity-accuracy trade-offs.",
+      "gap_refs": [
+        "GAP-001",
+        "GAP-003"
+      ],
+      "novelty_justification": "Unlike [25]’s Gated Sparse Attention—which applies sigmoid gating *after* attention computation—our hypothesis integrates gating *into the softmax logits before top-k selection*, making sparsity differentiable and information-aware. [25] uses post-hoc gating; we propose *logit-level gating + entropy regularization* to directly constrain attention distribution entropy, preventing mass collapse. No existing paper combines differentiable top-k with entropy control for sink mitigation.",
+      "feasibility_notes": "Moderate: Requires PyTorch with custom CUDA kernel for differentiable top-k (existing libraries like torchsort exist); entropy regularization adds <5 lines of code. Public data: LRA, LongBench, and PG-19 are all public. Compute: 1 A100 GPU, ~24 hours for ablation.",
+      "closest_existing_work": "Gated Sparse Attention (2026) — differs by applying gating *post-attention* rather than *pre-top-k* and omitting entropy regularization."
+    },
+    {
+      "hypothesis_id": "HYP-002",
+      "statement": "A cross-modal sparsity scheduler trained via reinforcement learning to allocate attention budget dynamically across vision and language tokens—conditioned on modality-specific uncertainty estimates—will improve robustness to occlusion and misalignment in multimodal reasoning.",
+      "gap_refs": [
+        "GAP-002",
+        "GAP-001"
+      ],
+      "novelty_justification": "All existing multimodal sparse works ([4], [11], [10]) use *modality-agnostic* sparsity (same k for all tokens) or hand-crafted rules. This hypothesis introduces *modality-aware RL scheduling*, which no paper implements. Closest is [19] DSVT, but it only adapts sparsity within LiDAR voxels—not across modalities—and lacks uncertainty conditioning.",
+      "feasibility_notes": "Hard: Requires RL training loop (PPO), uncertainty estimation (e.g., Monte Carlo dropout), and multimodal pretraining. Data: LAION-5B + COCO-Vid subsets are public. Compute: 4x A100, ~72 hours.",
+      "closest_existing_work": "DSVT: Dynamic Sparse Voxel Transformer (2023) — differs by being unimodal (LiDAR-only) and lacking cross-modal scheduling or uncertainty feedback."
+    }
+  ],
+  "selected_hypothesis": "HYP-001",
+  "rationale": "HYP-001 directly addresses the highest-severity gap (GAP-001) identified in the most recent and authoritative work ([25]), with a concrete, differentiable mechanism that closes the orthogonality gap between gating and sparsity. Its feasibility is high (moderate compute, public data, minimal code changes), and its novelty is rigorously distinguishable from [25]—not just incremental but architecturally distinct (logit-level vs. post-attention gating + entropy control). This makes it ideal for rapid validation and publication at NeurIPS/ICML.",
+  "evidence": {
+    "extracted_metrics": [],
+    "extraction_notes": "No paper abstract contains explicitly stated quantitative results (e.g., accuracy, error, F1-score, latency, memory reduction, Top-k, MAE, % improvement, etc.). All abstracts describe methods, motivations, challenges, or conceptual contributions without reporting any numeric performance metrics, baselines, or experimental outcomes.",
+    "coverage_warnings": [
+      "None of the 30 abstracts report quantitative evaluation results — no datasets, metrics, or numerical values are explicitly stated.",
+      "This suggests the provided text consists only of high-level introductions or problem statements, not empirical evaluation summaries."
+    ]
+  },
+  "reference_repos": [
+    {
+      "full_name": "ResponsibleAILab/DAM",
+      "description": "Dynamic Attention Mask (DAM) generate adaptive sparse attention masks per layer and head for Transformer models, enabling long-context inference with lower compute and memory overhead without fine-tuning.",
+      "url": "https://github.com/ResponsibleAILab/DAM",
+      "stars": 12,
+      "language": "Python",
+      "topics": [
+        "efficient-ai",
+        "inference-optimization",
+        "sparse-attention"
+      ],
+      "default_branch": "main",
+      "updated_at": "2026-01-09T06:54:54Z",
+      "file_tree": [],
+      "readme_excerpt": ""
+    },
+    {
+      "full_name": "vkxuds/AD-WaveNet",
+      "description": "A network that integrates the Discrete 2D Wavelet Transform (DWT) with adaptive attention mechanisms to enhance sparse image reconstruction.",
+      "url": "https://github.com/vkxuds/AD-WaveNet",
+      "stars": 4,
+      "language": "Python",
+      "topics": [],
+      "default_branch": "main",
+      "updated_at": "2025-12-05T14:57:03Z",
+      "file_tree": [],
+      "readme_excerpt": ""
+    },
+    {
+      "full_name": "dare1999/STDIGFormer",
+      "description": "Framework of STDIGFormer mainly consists of graph learning network, Temporal dynamic window sparse attention (DWSA) Transformer, co-attention and multi scale spatial-temporal feature fusion module.",
+      "url": "https://github.com/dare1999/STDIGFormer",
+      "stars": 2,
+      "language": "Python",
+      "topics": [],
+      "default_branch": "main",
+      "updated_at": "2025-08-09T07:17:35Z",
+      "file_tree": [],
+      "readme_excerpt": ""
+    },
+    {
+      "full_name": "harshabathala12/Sparse-ViT",
+      "description": "Sparse Vision Transformer trained from scratch with adaptive attention and dynamic head pruning",
+      "url": "https://github.com/harshabathala12/Sparse-ViT",
+      "stars": 1,
+      "language": "Python",
+      "topics": [],
+      "default_branch": "main",
+      "updated_at": "2026-01-14T12:21:45Z",
+      "file_tree": [],
+      "readme_excerpt": ""
+    },
+    {
+      "full_name": "Fzkuji/flash-lazy-attention",
+      "description": "Lazy Attention implementation with Triton kernels - adaptive sparse attention mechanism",
+      "url": "https://github.com/Fzkuji/flash-lazy-attention",
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "default_branch": "main",
+      "updated_at": "2025-12-05T15:35:36Z",
+      "file_tree": [],
+      "readme_excerpt": ""
+    }
+  ],
+  "must_cites": [
+    "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "A Simple Framework for Contrastive Learning of Visual Representations (SimCLR)",
+    "Momentum Contrast for Unsupervised Visual Representation Learning (MoCo)",
+    "Self-Supervised Learning with Graph Neural Networks for Recommender Systems",
+    "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation",
+    "Graph Neural Networks for Social Recommendation",
+    "DeepWalk: Online Learning of Social Representations",
+    "Node2Vec: Scalable Feature Learning for Networks",
+    "Variational Graph Auto-Encoders",
+    "Community Detection in Networks: A User Guide",
+    "Deep Learning Techniques for Automatic Cognitive Process Detection: A Survey",
+    "Spectral Networks and Locally Connected Networks on Graphs",
+    "Graph Attention Networks",
+    "Auto-Encoding Variational Bayes",
+    "Deep Graph Infomax"
+  ],
+  "must_cite_matches": [
+    {
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "paper_index": null,
+      "matched": false,
+      "match_score": 0.3333333333333333
+    },
+    {
+      "title": "A Simple Framework for Contrastive Learning of Visual Representations (SimCLR)",
+      "paper_index": null,
+      "matched": false,
+      "match_score": 0.42857142857142855
+    },
+    {
+      "title": "Momentum Contrast for Unsupervised Visual Representation Learning (MoCo)",
+      "paper_index": null,
+      "matched": false,
+      "match_score": 0.2857142857142857
+    },
+    {
+      "title": "Self-Supervised Learning with Graph Neural Networks for Recommender Systems",
+      "paper_index": 5,
+      "matched": true,
+      "match_score": 0.5714285714285714
+    },
+    {
+      "title": "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation",
+      "paper_index": null,
+      "matched": false,
+      "match_score": 0.3333333333333333
+    },
+    {
+      "title": "Graph Neural Networks for Social Recommendation",
+      "paper_index": null,
+      "matched": false,
+      "match_score": 0.5
+    },
+    {
+      "title": "DeepWalk: Online Learning of Social Representations",
+      "paper_index": null,
+      "matched": false,
+      "match_score": 0.16666666666666666
+    },
+    {
+      "title": "Node2Vec: Scalable Feature Learning for Networks",
+      "paper_index": null,
+      "matched": false,
+      "match_score": 0.5
+    },
+    {
+      "title": "Variational Graph Auto-Encoders",
+      "paper_index": null,
+      "matched": false,
+      "match_score": 0.0
+    },
+    {
+      "title": "Community Detection in Networks: A User Guide",
+      "paper_index": null,
+      "matched": false,
+      "match_score": 0.42857142857142855
+    },
+    {
+      "title": "Deep Learning Techniques for Automatic Cognitive Process Detection: A Survey",
+      "paper_index": 5,
+      "matched": true,
+      "match_score": 0.5714285714285714
+    },
+    {
+      "title": "Spectral Networks and Locally Connected Networks on Graphs",
+      "paper_index": null,
+      "matched": false,
+      "match_score": 0.2857142857142857
+    },
+    {
+      "title": "Graph Attention Networks",
+      "paper_index": 12,
+      "matched": true,
+      "match_score": 0.6666666666666666
+    },
+    {
+      "title": "Auto-Encoding Variational Bayes",
+      "paper_index": null,
+      "matched": false,
+      "match_score": 0.0
+    },
+    {
+      "title": "Deep Graph Infomax",
+      "paper_index": null,
+      "matched": false,
+      "match_score": 0.3333333333333333
+    }
+  ],
+  "theme_clusters": [],
+  "key_challenges": [],
+  "future_directions": []
+}

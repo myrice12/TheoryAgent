@@ -1,0 +1,79 @@
+{
+  "research": {
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "api_key": "sk-a9602bd1186344a09c29485f76c09e82",
+    "template_format": "neurips",
+    "execution_profile": "local_quick",
+    "writing_mode": "hybrid",
+    "max_retries": 2,
+    "auto_create_env": true,
+    "auto_download_resources": true,
+    "experiment_python": "/Users/chenxiao/Desktop/theory-agent/.venv/bin/python",
+    "ideation": {
+      "model": "qwen-plus",
+      "temperature": 0.5,
+      "max_tokens": 16384,
+      "timeout": 600.0
+    },
+    "planning": {
+      "model": "qwen-plus",
+      "temperature": 0.2,
+      "max_tokens": 16384,
+      "timeout": 600.0
+    },
+    "experiment": {
+      "model": "qwen-plus",
+      "temperature": 0.1,
+      "max_tokens": 8192,
+      "timeout": 600.0
+    },
+    "code_gen": {
+      "model": "qwen-plus",
+      "temperature": 0.1,
+      "max_tokens": 16384,
+      "timeout": 600.0
+    },
+    "writing": {
+      "model": "qwen-plus",
+      "temperature": 0.4,
+      "max_tokens": 16384,
+      "timeout": 600.0
+    },
+    "figure_prompt": {
+      "model": "qwen-plus",
+      "temperature": 0.5,
+      "max_tokens": 4096,
+      "timeout": 300.0
+    },
+    "figure_code": {
+      "model": "qwen-plus",
+      "temperature": 0.1,
+      "max_tokens": 16384,
+      "timeout": 600.0
+    },
+    "figure_gen": {
+      "model": "qwen-plus",
+      "image_backend": "openai",
+      "temperature": null,
+      "timeout": 300.0
+    },
+    "evidence_extraction": {
+      "model": "qwen-plus",
+      "temperature": 0.1,
+      "max_tokens": 8192,
+      "timeout": 300.0
+    },
+    "review": {
+      "model": "qwen-plus",
+      "temperature": 0.3,
+      "max_tokens": 16384,
+      "timeout": 300.0
+    },
+    "revision": {
+      "model": "qwen-plus",
+      "temperature": 0.3,
+      "max_tokens": 16384,
+      "timeout": 600.0
+    }
+  }
+}

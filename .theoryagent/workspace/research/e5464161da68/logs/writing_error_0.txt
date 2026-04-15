@@ -1,0 +1,16 @@
+Error: ImportError: cannot import name 'get_style_files' from 'nanoresearch.templates' (/Users/chenxiao/Desktop/math-llm/nanoresearch/templates/__init__.py)
+
+Traceback:
+Traceback (most recent call last):
+  File "/Users/chenxiao/Desktop/math-llm/nanoresearch/pipeline/base_orchestrator.py", line 289, in _run_stage_with_retry
+    result = await agent.run(**inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenxiao/Desktop/math-llm/nanoresearch/agents/writing/writing_agent.py", line 373, in run
+    pdf_result = await self._compile_pdf(tex_path, template_format=template_format)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenxiao/Desktop/math-llm/nanoresearch/agents/writing/latex_assembler.py", line 129, in _compile_pdf
+    self._copy_style_files(template_format)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/chenxiao/Desktop/math-llm/nanoresearch/agents/writing/latex_bib_figures.py", line 467, in _copy_style_files
+    from nanoresearch.templates import get_style_files
+ImportError: cannot import name 'get_style_files' from 'nanoresearch.templates' (/Users/chenxiao/Desktop/math-llm/nanoresearch/templates/__init__.py)

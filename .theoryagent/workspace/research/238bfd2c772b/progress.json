@@ -1,0 +1,23 @@
+{
+  "events": [
+    {
+      "type": "stage_start",
+      "stage": "IDEATION",
+      "progress_pct": 0,
+      "message": "[1/9] Running IDEATION...",
+      "stage_index": 0,
+      "total_stages": 9,
+      "timestamp": "2026-04-13T13:11:55.157270+00:00",
+      "elapsed_s": 0.0
+    },
+    {
+      "type": "pipeline_complete",
+      "success": false,
+      "progress_pct": -1,
+      "message": "Deep pipeline failed",
+      "timestamp": "2026-04-13T13:13:16.396176+00:00",
+      "elapsed_s": 81.2
+    }
+  ],
+  "last_update": "2026-04-13T13:13:16.396185+00:00"
+}

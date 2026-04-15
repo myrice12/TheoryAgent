@@ -1,0 +1,104 @@
+{
+  "total_citations": 23,
+  "must_cite_total": 15,
+  "must_cite_found": 0,
+  "missing_must_cites": [
+    {
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "cite_key": null,
+      "paper_index": null
+    },
+    {
+      "title": "A Simple Framework for Contrastive Learning of Visual Representations (SimCLR)",
+      "cite_key": null,
+      "paper_index": null
+    },
+    {
+      "title": "Momentum Contrast for Unsupervised Visual Representation Learning (MoCo)",
+      "cite_key": null,
+      "paper_index": null
+    },
+    {
+      "title": "Self-Supervised Learning with Graph Neural Networks for Recommender Systems",
+      "cite_key": "yu2023",
+      "paper_index": 5
+    },
+    {
+      "title": "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation",
+      "cite_key": null,
+      "paper_index": null
+    },
+    {
+      "title": "Graph Neural Networks for Social Recommendation",
+      "cite_key": null,
+      "paper_index": null
+    },
+    {
+      "title": "DeepWalk: Online Learning of Social Representations",
+      "cite_key": null,
+      "paper_index": null
+    },
+    {
+      "title": "Node2Vec: Scalable Feature Learning for Networks",
+      "cite_key": null,
+      "paper_index": null
+    },
+    {
+      "title": "Variational Graph Auto-Encoders",
+      "cite_key": null,
+      "paper_index": null
+    },
+    {
+      "title": "Community Detection in Networks: A User Guide",
+      "cite_key": null,
+      "paper_index": null
+    },
+    {
+      "title": "Deep Learning Techniques for Automatic Cognitive Process Detection: A Survey",
+      "cite_key": "yu2023",
+      "paper_index": 5
+    },
+    {
+      "title": "Spectral Networks and Locally Connected Networks on Graphs",
+      "cite_key": null,
+      "paper_index": null
+    },
+    {
+      "title": "Graph Attention Networks",
+      "cite_key": "withnall2020",
+      "paper_index": 12
+    },
+    {
+      "title": "Auto-Encoding Variational Bayes",
+      "cite_key": null,
+      "paper_index": null
+    },
+    {
+      "title": "Deep Graph Infomax",
+      "cite_key": null,
+      "paper_index": null
+    }
+  ],
+  "cited_must_cites": [],
+  "section_cites": {
+    "Introduction": 11,
+    "Related Work": 16,
+    "Method": 7,
+    "Experiments": 8,
+    "Conclusion": 4
+  },
+  "high_cited_total": 19,
+  "high_cited_referenced": 9,
+  "uncited_high_keys": [
+    "chen2021",
+    "farzaneh2021",
+    "hao2023",
+    "huang2019",
+    "kang2018",
+    "liu2015",
+    "liu2021",
+    "su2022",
+    "withnall2020",
+    "yu2023"
+  ]
+}

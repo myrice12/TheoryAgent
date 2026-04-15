@@ -1,0 +1,64 @@
+Error: RuntimeError: LLM call to model 'qwen-plus' failed after 6 attempts: Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-8ffdbf2e-ea6e-99a9-85f7-bf0a6c494894', 'request_id': '8ffdbf2e-ea6e-99a9-85f7-bf0a6c494894'}
+
+Traceback:
+Traceback (most recent call last):
+  File "/Users/chenxiao/Desktop/theory-agent/theoryagent/pipeline/multi_model.py", line 258, in generate_with_usage
+    response = await loop.run_in_executor(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/Users/chenxiao/miniconda3/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/chenxiao/Desktop/theory-agent/.venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/chenxiao/Desktop/theory-agent/.venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1147, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/chenxiao/Desktop/theory-agent/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenxiao/Desktop/theory-agent/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-8ffdbf2e-ea6e-99a9-85f7-bf0a6c494894', 'request_id': '8ffdbf2e-ea6e-99a9-85f7-bf0a6c494894'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/chenxiao/Desktop/theory-agent/theoryagent/pipeline/base_orchestrator.py", line 289, in _run_stage_with_retry
+    result = await agent.run(**inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenxiao/Desktop/theory-agent/theoryagent/agents/ideation.py", line 230, in run
+    output = await self._analyze_and_hypothesize(topic, queries, papers)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenxiao/Desktop/theory-agent/theoryagent/agents/ideation_hypothesis.py", line 243, in _analyze_and_hypothesize
+    result = await self.generate_json(IDEATION_ANALYSIS_SYSTEM, prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenxiao/Desktop/theory-agent/theoryagent/agents/base.py", line 107, in generate_json
+    raw = await self.generate(
+          ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/Users/chenxiao/Desktop/theory-agent/theoryagent/agents/base.py", line 78, in generate
+    return await self._dispatcher.generate(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        cfg, system_prompt, user_prompt, json_mode
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/chenxiao/Desktop/theory-agent/theoryagent/pipeline/multi_model.py", line 221, in generate
+    result = await self.generate_with_usage(config, system_prompt, user_prompt, json_mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenxiao/Desktop/theory-agent/theoryagent/pipeline/multi_model.py", line 301, in generate_with_usage
+    raise RuntimeError(
+        f"LLM call to model {config.model!r} failed after {MAX_API_RETRIES + 1} attempts: {last_exc}"
+    ) from last_exc
+RuntimeError: LLM call to model 'qwen-plus' failed after 6 attempts: Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-8ffdbf2e-ea6e-99a9-85f7-bf0a6c494894', 'request_id': '8ffdbf2e-ea6e-99a9-85f7-bf0a6c494894'}

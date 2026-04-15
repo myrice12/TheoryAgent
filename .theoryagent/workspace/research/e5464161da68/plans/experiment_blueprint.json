@@ -1,0 +1,231 @@
+{
+  "title": "Entropy-Regularized Differentiable Top-k Attention: Ablation and Benchmarking for Sink Mitigation and Adaptive Sparsity",
+  "hypothesis_ref": "HYP-001",
+  "datasets": [
+    {
+      "name": "LRA (Long Range Arena)",
+      "description": "Standard benchmark suite for long-context sequence modeling, including ListOps, Text, Retrieval, Image, and Pathfinder tasks.",
+      "source_url": "https://github.com/google-research/long-range-arena",
+      "size_info": "5 tasks; max seq len = 4K–16K tokens; total train examples ≈ 1.2M",
+      "preprocessing_notes": "Use official tokenization and preprocessing scripts; pad/truncate to task-specific max lengths; apply no data augmentation."
+    },
+    {
+      "name": "LongBench",
+      "description": "Comprehensive long-context evaluation benchmark with 6 NLP tasks (e.g., multi-hop QA, summarization, code generation) and 3 domain-specific variants (legal, scientific, conversational).",
+      "source_url": "https://github.com/THUDM/LongBench",
+      "size_info": "25k+ test instances across 9 tasks; context lengths 4K–32K; human-annotated ground truth.",
+      "preprocessing_notes": "Use official v1.0 splits; retain full context without truncation; apply task-specific prompt templates; evaluate with exact match & ROUGE-L where applicable."
+    },
+    {
+      "name": "PG-19",
+      "description": "Large-scale book-length language modeling dataset with documents averaging ~100K tokens; stresses memory and attention distribution over extreme contexts.",
+      "source_url": "https://github.com/deepmind/pg19",
+      "size_info": "28.5K books; avg. length ≈ 102K tokens; train/test split provided.",
+      "preprocessing_notes": "Chunk into non-overlapping 32K-token sequences; use byte-level BPE tokenizer from GPT-2; discard sequences < 8K tokens."
+    }
+  ],
+  "baselines": [
+    {
+      "name": "Dense Transformer (Vanilla)",
+      "description": "Standard full self-attention with softmax, no sparsity.",
+      "reference_paper_id": "25",
+      "expected_performance": {
+        "accuracy": null,
+        "FLOPs": null,
+        "memory_gb": null,
+        "latency_ms": null
+      },
+      "performance_provenance": {
+        "accuracy": "N/A",
+        "FLOPs": "N/A",
+        "memory_gb": "N/A",
+        "latency_ms": "N/A"
+      },
+      "is_projected": {
+        "accuracy": false,
+        "FLOPs": false,
+        "memory_gb": false,
+        "latency_ms": false
+      }
+    },
+    {
+      "name": "Top-k Sparse Attention",
+      "description": "Hard top-k selection on attention logits followed by softmax; k=64 or adaptive per-head.",
+      "reference_paper_id": "20",
+      "expected_performance": {
+        "accuracy": null,
+        "FLOPs": null,
+        "memory_gb": null,
+        "latency_ms": null
+      },
+      "performance_provenance": {
+        "accuracy": "N/A",
+        "FLOPs": "N/A",
+        "memory_gb": "N/A",
+        "latency_ms": "N/A"
+      },
+      "is_projected": {
+        "accuracy": false,
+        "FLOPs": false,
+        "memory_gb": false,
+        "latency_ms": false
+      }
+    },
+    {
+      "name": "Gated Sparse Attention (GSA)",
+      "description": "Post-attention sigmoid gating applied to dense attention output before value projection; sparsity induced *after* softmax.",
+      "reference_paper_id": "25",
+      "expected_performance": {
+        "accuracy": null,
+        "FLOPs": null,
+        "memory_gb": null,
+        "latency_ms": null
+      },
+      "performance_provenance": {
+        "accuracy": "N/A",
+        "FLOPs": "N/A",
+        "memory_gb": "N/A",
+        "latency_ms": "N/A"
+      },
+      "is_projected": {
+        "accuracy": false,
+        "FLOPs": false,
+        "memory_gb": false,
+        "latency_ms": false
+      }
+    },
+    {
+      "name": "DynamicViT",
+      "description": "Token-level dynamic sparsification via confidence-based pruning of redundant tokens before attention.",
+      "reference_paper_id": "9",
+      "expected_performance": {
+        "accuracy": null,
+        "FLOPs": null,
+        "memory_gb": null,
+        "latency_ms": null
+      },
+      "performance_provenance": {
+        "accuracy": "N/A",
+        "FLOPs": "N/A",
+        "memory_gb": "N/A",
+        "latency_ms": "N/A"
+      },
+      "is_projected": {
+        "accuracy": false,
+        "FLOPs": false,
+        "memory_gb": false,
+        "latency_ms": false
+      }
+    }
+  ],
+  "proposed_method": {
+    "name": "Entropy-Regularized Differentiable Top-k (ER-DTopk)",
+    "description": "A fully differentiable sparse attention mechanism that integrates gating-aware logits, trainable temperature τ, and entropy regularization into the top-k selection loop — enabling end-to-end optimization of sparsity-accuracy trade-offs while eliminating attention sinks.",
+    "key_components": [
+      "Logit-level gating: element-wise multiplication of attention logits with sigmoid-gated mask derived from token-wise features (e.g., norm, positional encoding, or lightweight MLP)",
+      "Differentiable top-k: soft top-k operator using torchsort or custom CUDA kernel with temperature τ (trainable scalar per layer)",
+      "Entropy regularization: KL divergence penalty between attention distribution and uniform prior, scaled by λ (trainable per-layer scalar)",
+      "Sink mitigation objective: explicit gradient signal against low-entropy attention maps via entropy loss term"
+    ],
+    "architecture": "Drop-in replacement for standard MultiHeadAttention. For each head: (1) compute QK^T → logits; (2) apply logit-level gating mask; (3) scale by trainable τ; (4) apply differentiable top-k to produce sparse attention weights; (5) compute entropy loss; (6) apply softmax over selected indices only; (7) attend over values. All components are differentiable and jointly trained."
+  },
+  "metrics": [
+    {
+      "name": "Accuracy",
+      "description": "Task-specific accuracy (e.g., classification accuracy for ListOps, EM for QA in LongBench, PPL for PG-19).",
+      "higher_is_better": true,
+      "primary": true
+    },
+    {
+      "name": "FLOPs",
+      "description": "Total floating-point operations per forward pass (normalized per token), measured via fvcore or PyTorch profiler.",
+      "higher_is_better": false,
+      "primary": false
+    },
+    {
+      "name": "Memory_GB",
+      "description": "Peak GPU memory consumption during training (batch size = 8, seq len = 8K).",
+      "higher_is_better": false,
+      "primary": false
+    },
+    {
+      "name": "Latency_ms",
+      "description": "End-to-end inference latency (ms) per sequence on A100 (batch=1, seq=8K).",
+      "higher_is_better": false,
+      "primary": false
+    },
+    {
+      "name": "Sink_Entropy_Bits",
+      "description": "Mean Shannon entropy (bits) of attention distributions across all heads and layers; higher = less sink formation.",
+      "higher_is_better": true,
+      "primary": true
+    },
+    {
+      "name": "Sparsity_Ratio",
+      "description": "Fraction of attention weights pruned (i.e., zeroed) per head, averaged across layers and batches.",
+      "higher_is_better": false,
+      "primary": false
+    }
+  ],
+  "ablation_groups": [
+    {
+      "group_name": "Gating Position Ablation",
+      "description": "Tests whether gating *before* top-k (logit-level) is necessary vs. post-softmax gating.",
+      "variants": [
+        {
+          "name": "ER-DTopk (logit-gating)",
+          "description": "Full proposed method: gating applied to logits before differentiable top-k."
+        },
+        {
+          "name": "ER-DTopk (post-softmax gating)",
+          "description": "Gating applied after softmax, as in [25]; same entropy regularization and differentiable top-k."
+        },
+        {
+          "name": "ER-DTopk (no gating)",
+          "description": "Baseline differentiable top-k + entropy regularization, but no gating mask."
+        }
+      ]
+    },
+    {
+      "group_name": "Entropy Regularization Ablation",
+      "description": "Evaluates necessity and sensitivity of entropy regularization for sink mitigation.",
+      "variants": [
+        {
+          "name": "ER-DTopk (λ=0.0)",
+          "description": "No entropy regularization; only differentiable top-k + logit gating."
+        },
+        {
+          "name": "ER-DTopk (λ=0.1)",
+          "description": "Fixed entropy coefficient."
+        },
+        {
+          "name": "ER-DTopk (λ=trainable)",
+          "description": "Per-layer trainable λ optimized jointly with model."
+        }
+      ]
+    },
+    {
+      "group_name": "Differentiability Ablation",
+      "description": "Compares differentiable vs. hard top-k under identical gating and entropy settings.",
+      "variants": [
+        {
+          "name": "ER-DTopk (soft-topk)",
+          "description": "Full differentiable implementation using softmax relaxation or sorting gradients."
+        },
+        {
+          "name": "Hard-Topk + gating + entropy",
+          "description": "Non-differentiable argtopk with straight-through estimator; otherwise identical architecture."
+        }
+      ]
+    }
+  ],
+  "compute_requirements": {
+    "gpu_type": "NVIDIA A100 80GB",
+    "num_gpus": 1,
+    "estimated_hours": 24.0,
+    "memory_gb": 72.0,
+    "notes": ""
+  },
+  "evidence_summary": "No quantitative baseline performance numbers were available in the published quantitative evidence section. All 'expected_performance' values are set to null per instruction, as no numeric results from source papers were provided.",
+  "data_provenance_note": "All baseline metric values are marked 'N/A' or null because no published quantitative evidence was supplied. Projected improvements for ER-DTopk (e.g., '5–10% higher Sink_Entropy_Bits than GSA', '2–3× lower FLOPs than Dense Transformer at matched accuracy') are *not* included in this JSON — per instructions, only verifiable published numbers may appear in 'expected_performance', and none were provided. Any performance claims for the proposed method will be reported *only* in experimental results post-training, not projected here."
+}

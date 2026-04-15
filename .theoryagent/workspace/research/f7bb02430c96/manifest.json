@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.1",
+  "session_id": "f7bb02430c96",
+  "topic": "Retrieval-Augmented Reasoning",
+  "pipeline_mode": "deep",
+  "paper_mode": "survey_short",
+  "current_stage": "FAILED",
+  "stages": {
+    "INIT": {
+      "stage": "INIT",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "IDEATION": {
+      "stage": "IDEATION",
+      "status": "failed",
+      "started_at": "2026-04-13T13:10:32.864757Z",
+      "completed_at": "2026-04-13T13:10:33.177667Z",
+      "retries": 3,
+      "error_message": "RuntimeError: LLM call to model 'qwen-plus' failed after 6 attempts: Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-6ac8d9ed-ce1e-9610-b94a-dbff58b6fc44', 'request_id': '6ac8d9ed-ce1e-9610-b94a-dbff58b6fc44'}",
+      "output_path": ""
+    },
+    "PLANNING": {
+      "stage": "PLANNING",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "SETUP": {
+      "stage": "SETUP",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "CODING": {
+      "stage": "CODING",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "EXECUTION": {
+      "stage": "EXECUTION",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "ANALYSIS": {
+      "stage": "ANALYSIS",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "FIGURE_GEN": {
+      "stage": "FIGURE_GEN",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "WRITING": {
+      "stage": "WRITING",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    },
+    "REVIEW": {
+      "stage": "REVIEW",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "retries": 0,
+      "error_message": "",
+      "output_path": ""
+    }
+  },
+  "artifacts": [],
+  "config_snapshot": {
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "timeout": 180.0,
+    "ideation": {
+      "model": "qwen-plus",
+      "temperature": 0.5,
+      "max_tokens": 16384,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "planning": {
+      "model": "qwen-plus",
+      "temperature": 0.2,
+      "max_tokens": 16384,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "experiment": {
+      "model": "qwen-plus",
+      "temperature": 0.1,
+      "max_tokens": 8192,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "writing": {
+      "model": "qwen-plus",
+      "temperature": 0.4,
+      "max_tokens": 16384,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "code_gen": {
+      "model": "qwen-plus",
+      "temperature": 0.1,
+      "max_tokens": 16384,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "figure_prompt": {
+      "model": "qwen-plus",
+      "temperature": 0.5,
+      "max_tokens": 4096,
+      "timeout": 300.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "figure_code": {
+      "model": "qwen-plus",
+      "temperature": 0.1,
+      "max_tokens": 16384,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "figure_gen": {
+      "model": "qwen-plus",
+      "temperature": null,
+      "max_tokens": 8192,
+      "timeout": 300.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "evidence_extraction": {
+      "model": "qwen-plus",
+      "temperature": 0.1,
+      "max_tokens": 8192,
+      "timeout": 300.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "review": {
+      "model": "qwen-plus",
+      "temperature": 0.3,
+      "max_tokens": 16384,
+      "timeout": 300.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "revision": {
+      "model": "qwen-plus",
+      "temperature": 0.3,
+      "max_tokens": 16384,
+      "timeout": 600.0,
+      "image_backend": "openai",
+      "base_url": null,
+      "aspect_ratio": "1:1",
+      "image_size": "1024x1024"
+    },
+    "skip_stages": [],
+    "template_format": "neurips",
+    "max_retries": 2,
+    "quick_eval_timeout": 3600,
+    "execution_profile": "local_quick",
+    "writing_mode": "hybrid",
+    "writing_tool_max_rounds": 3,
+    "auto_create_env": true,
+    "auto_download_resources": true,
+    "local_execution_timeout": 1800,
+    "runtime_auto_install_enabled": true,
+    "runtime_auto_install_max_packages": 50,
+    "runtime_auto_install_max_nltk_downloads": 50,
+    "runtime_auto_install_allowlist": [],
+    "environment_backend": "auto",
+    "experiment_conda_env": "",
+    "experiment_python": "/Users/chenxiao/Desktop/theory-agent/.venv/bin/python",
+    "review_committee": [],
+    "cluster": {},
+    "experiment_max_rounds": 3,
+    "experiment_plateau_patience": 2,
+    "experiment_improvement_threshold": 0.005,
+    "experiment_mode": "pipeline",
+    "react_max_rounds": 80,
+    "slurm_partition": "",
+    "slurm_max_gpus": 2,
+    "slurm_default_time": "30-00:00:00",
+    "container_image": "",
+    "container_path": "",
+    "container_bind": "/mnt:/mnt"
+  },
+  "created_at": "2026-04-13T13:09:13.497637Z",
+  "updated_at": "2026-04-13T13:10:33.177682Z"
+}
